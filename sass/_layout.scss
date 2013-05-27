@@ -16,6 +16,62 @@
 
 /* #Site Styles
 ================================================== */
+body {
+	background-image: url('../images/onoiso.png');
+	// background: black;
+}
+body,
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:22px;
+}
+.logo {
+	margin: 3% 0;
+}
+
+p {
+	padding: 5.5%;
+}
+
+.boxinfo {
+	font-size: 22px;
+	font-weight: 400;
+}
+h2 {
+	@extend .boxinfo;
+	font-size: 30px;
+	font-weight: 900px;
+	text-transform: uppercase;
+}
+
+.item-title {
+	@extend .boxinfo;
+	font-size: 34px;
+	text-transform:uppercase;
+	text-align: center;
+}
+
+.infopara {
+	border: solid #ccc;
+	border-width: 2px 0;
+	@include border-radius(15px);
+}
+	// background: black;
+
+
+.lister {
+	padding: 0 10%;
+	li {
+		list-style-type: circle;
+	}
+}
+
+.size-guide {
+	width: 100%;
+	tr {
+		text-align:center;
+	}
+}
 
 /* #Page Styles
 ================================================== */

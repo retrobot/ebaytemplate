@@ -29,12 +29,17 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-	options: {
-	  livereload: true,
-	},
-	html: {
-          files: ['./app/design/frontend/**/*.{phtml,xml}','./skin/**/*.css','!node_modules/**/*.*'],
+      options: {
+        livereload: true,
       },
+      html: {
+        files: ['./**/*.{phtml,xml,html}','./**/*.css','!node_modules/**/*.*'],
+      },
+      sass: {
+        files: ['sass/*.{scss,sass}'],
+        tasks: ['compass:dist'],
+      },
+
     },
   // image minification settings
     imagemin: {
